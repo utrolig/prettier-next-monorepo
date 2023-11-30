@@ -1,0 +1,9 @@
+{
+  "name": "@monopretty/app-1",
+  "version": "1.0.0",
+  "license": "MIT",
+  "scripts": {
+    "prettier:check": "prettier --check **/*.{js,ts,tsx,json,css,scss}",
+    "prettier:fix": "prettier --write **/*.{js,ts,tsx,json,css,scss}"
+  }
+}

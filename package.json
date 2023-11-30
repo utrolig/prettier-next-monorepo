@@ -1,0 +1,19 @@
+{
+  "name": "prettier-monorepo-checking",
+  "version": "1.0.0",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "prettier:once": "prettier --check packages/**/*.{js,ts,tsx,json,css,scss}",
+    "prettier:check-all": "lerna run prettier:check",
+    "prettier:fix-all": "lerna run prettier:fix"
+  },
+  "devDependencies": {
+    "lerna": "^7.3.1",
+    "prettier": "^4.0.0-alpha.2"
+  },
+  "dependencies": {}
+}
